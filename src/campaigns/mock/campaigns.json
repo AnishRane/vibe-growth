@@ -1,0 +1,168 @@
+[
+  {
+    "id": "camp-001",
+    "name": "Summer Sale 2025",
+    "status": "active",
+    "startDate": "2025-06-01",
+    "endDate": "2025-08-31",
+    "budget": 50000,
+    "stats": {
+      "impressions": 1000000,
+      "clicks": 25000,
+      "conversions": 1250,
+      "spend": 12500
+    },
+    "dailyMetrics": [
+      {
+        "date": "2025-06-01",
+        "impressions": 10000,
+        "clicks": 250,
+        "conversions": 12,
+        "spend": 125
+      },
+      {
+        "date": "2025-06-02",
+        "impressions": 11000,
+        "clicks": 275,
+        "conversions": 14,
+        "spend": 137.5
+      }
+    ]
+  },
+  {
+    "id": "camp-002",
+    "name": "Fall Collection Launch",
+    "status": "active",
+    "startDate": "2025-09-01",
+    "endDate": "2025-11-30",
+    "budget": 75000,
+    "stats": {
+      "impressions": 1500000,
+      "clicks": 45000,
+      "conversions": 2700,
+      "spend": 22500
+    },
+    "dailyMetrics": [
+      {
+        "date": "2025-09-01",
+        "impressions": 15000,
+        "clicks": 450,
+        "conversions": 27,
+        "spend": 225
+      }
+    ]
+  },
+  {
+    "id": "camp-003",
+    "name": "Holiday Gift Guide",
+    "status": "paused",
+    "startDate": "2025-11-15",
+    "endDate": "2025-12-25",
+    "budget": 100000,
+    "stats": {
+      "impressions": 800000,
+      "clicks": 16000,
+      "conversions": 640,
+      "spend": 8000
+    }
+  },
+  {
+    "id": "camp-004",
+    "name": "New Year Flash Sale",
+    "status": "completed",
+    "startDate": "2024-12-28",
+    "endDate": "2025-01-05",
+    "budget": 30000,
+    "stats": {
+      "impressions": 600000,
+      "clicks": 18000,
+      "conversions": 900,
+      "spend": 9000
+    }
+  },
+  {
+    "id": "camp-005",
+    "name": "Spring Refresh",
+    "status": "active",
+    "startDate": "2025-03-01",
+    "endDate": "2025-05-31",
+    "budget": 60000,
+    "stats": {
+      "impressions": 2000000,
+      "clicks": 40000,
+      "conversions": 1600,
+      "spend": 16000
+    }
+  },
+  {
+    "id": "camp-006",
+    "name": "Back to School",
+    "status": "paused",
+    "startDate": "2025-08-01",
+    "endDate": "2025-09-15",
+    "budget": 45000,
+    "stats": {
+      "impressions": 500000,
+      "clicks": 5000,
+      "conversions": 150,
+      "spend": 5000
+    }
+  },
+  {
+    "id": "camp-007",
+    "name": "Black Friday Mega Sale",
+    "status": "completed",
+    "startDate": "2024-11-20",
+    "endDate": "2024-11-30",
+    "budget": 150000,
+    "stats": {
+      "impressions": 3000000,
+      "clicks": 120000,
+      "conversions": 7200,
+      "spend": 60000
+    }
+  },
+  {
+    "id": "camp-008",
+    "name": "Valentine's Day Special",
+    "status": "completed",
+    "startDate": "2025-02-01",
+    "endDate": "2025-02-14",
+    "budget": 40000,
+    "stats": {
+      "impressions": 900000,
+      "clicks": 27000,
+      "conversions": 1620,
+      "spend": 13500
+    }
+  },
+  {
+    "id": "camp-009",
+    "name": "Mother's Day Campaign",
+    "status": "active",
+    "startDate": "2025-05-01",
+    "endDate": "2025-05-11",
+    "budget": 35000,
+    "stats": {
+      "impressions": 700000,
+      "clicks": 21000,
+      "conversions": 1050,
+      "spend": 10500
+    }
+  },
+  {
+    "id": "camp-010",
+    "name": "Clearance Event",
+    "status": "paused",
+    "startDate": "2025-07-01",
+    "endDate": "2025-07-15",
+    "budget": 25000,
+    "stats": {
+      "impressions": 400000,
+      "clicks": 8000,
+      "conversions": 320,
+      "spend": 4000
+    }
+  }
+]
+
