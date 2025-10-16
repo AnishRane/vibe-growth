@@ -219,7 +219,7 @@ describe('IntentController', () => {
 
       expect(result.message).toBeDefined();
       expect(typeof result.message).toBe('string');
-      expect(result.message.length).toBeGreaterThan(0);
+      expect(result.message!.length).toBeGreaterThan(0);
     });
   });
 });
