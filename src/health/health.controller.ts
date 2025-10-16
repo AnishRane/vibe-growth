@@ -1,7 +1,9 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Sse } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { HealthService } from './health.service';
 import { HealthResponseDto } from './dto/health-response.dto';
+import { interval, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @ApiTags('health')
 @Controller('health')
@@ -21,4 +23,11 @@ export class HealthController {
   getHealth(): HealthResponseDto {
     return this.healthService.getHealthMetrics();
   }
+
+  @Sse('stream')
+  healthStream(): Observable<any> {
+    return interval(10000).pipe(map(() => ({ data: this.healthService.getHealthMetrics() })));
+  }
+
+
 }
