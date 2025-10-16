@@ -1,9 +1,10 @@
 import { Controller, Get } from '@nestjs/common';
-import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
+import { ApiTags, ApiOperation, ApiResponse, ApiSecurity } from '@nestjs/swagger';
 import { MetricsService } from './metrics.service';
 import { MetricsSummaryDto } from './dto/metrics-summary.dto';
 
 @ApiTags('metrics')
+@ApiSecurity('x-api-key')
 @Controller('metrics')
 export class MetricsController {
   constructor(private readonly metricsService: MetricsService) {}

@@ -1,9 +1,10 @@
 import { Controller, Post, Body } from '@nestjs/common';
-import { ApiTags, ApiOperation, ApiResponse, ApiBody } from '@nestjs/swagger';
+import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiSecurity } from '@nestjs/swagger';
 import { IntentService } from './intent.service';
 import { IntentQueryDto, IntentResponseDto } from './dto/intent-query.dto';
 
 @ApiTags('intent')
+@ApiSecurity('x-api-key')
 @Controller('intent')
 export class IntentController {
   constructor(private readonly intentService: IntentService) {}

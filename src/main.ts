@@ -21,6 +21,7 @@ async function bootstrap() {
     .addTag('intent', 'Natural language query endpoints')
     .addTag('health', 'Health check endpoints')
     .addTag('metrics', 'Metrics and analytics endpoints')
+    .addApiKey({ type: 'apiKey', name: 'x-api-key', in: 'header' }, 'x-api-key')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);

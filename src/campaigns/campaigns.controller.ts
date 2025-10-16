@@ -1,11 +1,12 @@
 import { Controller, Get, Param, Query } from '@nestjs/common';
-import { ApiTags, ApiOperation, ApiResponse, ApiParam, ApiQuery } from '@nestjs/swagger';
+import { ApiTags, ApiOperation, ApiResponse, ApiParam, ApiQuery, ApiSecurity } from '@nestjs/swagger';
 import { CampaignsService } from './campaigns.service';
 import { GetCampaignsDto } from './dto/get-campaigns.dto';
 import { PaginatedCampaignsResponse } from './dto/campaigns-response.dto';
 import { CampaignWithKPIs } from './dto/campaign-response.interface';
 
 @ApiTags('campaigns')
+@ApiSecurity('x-api-key')
 @Controller('campaigns')
 export class CampaignsController {
   constructor(private readonly campaignsService: CampaignsService) {}

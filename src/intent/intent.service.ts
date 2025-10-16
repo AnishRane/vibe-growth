@@ -9,6 +9,7 @@ export class IntentService {
 
   parsePrompt(prompt: string): ParsedIntent {
     const lowerPrompt = prompt.toLowerCase().trim();
+
     const intent: ParsedIntent = {};
 
 
